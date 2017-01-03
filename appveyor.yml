@@ -12,3 +12,8 @@ build_script:
 - powershell -NoProfile -ExecutionPolicy unrestricted -Command .\win32\build.ps1
 
 test: off
+
+artifacts:
+- path: win32/build/out/Release
+  name: kinky
+  type: WebDeployPackage
